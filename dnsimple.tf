@@ -1,6 +1,6 @@
 # Add ALIAS record of GitHub page to the domain 
 resource "dnsimple_record" "alias-record" {
-  domain = "var.domain"
+  domain = "${var.domain}"
   name = "@"
   value = "${var.gh_pages_url}"
   type = "ALIAS"
@@ -10,7 +10,7 @@ resource "dnsimple_record" "alias-record" {
 
 # Add A record of GitHub page to the domain 
 resource "dnsimple_record" "a-record1" {
-  domain = "deeeet.com"
+  domain = "${var.domain}"
   name = "@"
   value = "192.30.252.153"
   type = "A"
@@ -19,7 +19,7 @@ resource "dnsimple_record" "a-record1" {
 
 # Add A record of GitHub page to the domain 
 resource "dnsimple_record" "a-record2" {
-  domain = "deeeet.com"
+  domain = "${var.domain}"
   name = "@"
   value = "192.30.252.154"
   type = "A"
