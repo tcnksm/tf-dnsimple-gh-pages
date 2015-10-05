@@ -1,3 +1,5 @@
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](/LICENSE)
+
 This is collection of `.tf` files to setup custom apex domain for your GitHub pages. This does exactly same thing as the official documentation (["Tips for configuring an A record with your DNS provider"](https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider/)) with [Terraform](https://terraform.io/), [Atlas](https://atlas.hashicorp.com/) and [DNSimple](https://dnsimple.com). 
 
 ## Usage
